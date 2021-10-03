@@ -1,0 +1,29 @@
+<div class='index-container'>
+  <div class='index-wrapper'>
+    <strong> <p id="notice"><%= notice %></p></strong> 
+    <h1 class='index-header'><%= link_to 'MangaRocks', root_path %></h1>
+    
+      <% @manga.each do |manga| %>
+
+        <div class='manga_info-wrapper'>
+          <div class='manga_info'>
+            <h2 class='manga_title'><%= manga.title %></h2>
+            <h3>Summary</h3>
+            <p><%= manga.summary %></p>
+            <div>
+            <button class='show'><%= link_to 'Show', manga %></button>
+            <button class='edit'><%= link_to 'Edit', edit_manga_path(manga) %></button>
+            <button class='delete'><%= link_to 'Destroy', manga, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+          </div>
+        </div>
+       <% end %>
+    <br>
+    <div class='action_new'>
+      <%= link_to 'New Manga', new_manga_path %> |
+      <%= link_to 'back to Home page', root_path %> 
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,13 @@
+<div class='show-wrapper'>
+  <p id="notice"><%= notice %></p>
+
+  <div class='manga_info'>
+        <h2 class='manga_title'><%= @manga.title %></h2>
+        <h3>Summary</h3>
+        <p><%= @manga.summary %></p>
+  <div>
+
+
+  <%= link_to 'Edit', edit_manga_path(@manga) %> |
+  <%= link_to 'Back', mangas_path %>
+</div>

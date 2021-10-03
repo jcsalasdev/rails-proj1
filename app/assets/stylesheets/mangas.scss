@@ -1,0 +1,89 @@
+.index-container {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.index-wrapper {
+  padding: 1.5rem 0;
+  background-color: whitesmoke;
+  width: 60vmax;
+  border-radius: 15px;
+  box-shadow: 20px 20px 35px gray, -30px -30px 40px rgb(233, 231, 231);
+}
+.index-header a {
+  font-size: 3rem;
+  color: goldenrod;
+  text-shadow: 0.2rem 0.1rem 0.2rem black;
+}
+
+.manga_info-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manga_info {
+  border: 3px solid grey;
+  border-radius: 10px;
+  background-color: black;
+  padding: 0 1rem 1rem;
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+.manga_title {
+  color: goldenrod;
+  margin-top: 0;
+  border-bottom: 2px solid goldenrod;
+  padding: 10px;
+}
+
+button {
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none !important;
+}
+.show a,
+.show {
+  border-color: limegreen;
+  color: limegreen;
+}
+.show:hover,
+.show a:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.edit,
+.edit a {
+  border-color: lightskyblue;
+  color: skyblue;
+}
+
+.edit:hover,
+.edit a:hover {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.delete,
+.delete a {
+  border-color: red;
+  color: red;
+}
+
+.delete:hover,
+.delete a:hover {
+  background-color: red;
+  color: black;
+}
+
+.action_new,
+.action_new a {
+  color: black;
+}
