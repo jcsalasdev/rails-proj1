@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_10_02_034819) do
   create_table "mangas", force: :cascade do |t|
     t.string "title"
     t.text "summary"
+    t.string "vcode"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
